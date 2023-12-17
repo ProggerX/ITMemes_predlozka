@@ -14,7 +14,7 @@
 
 				nativeBuildInputs = with pkgs; [
 					gcc
-					bear
+					just
 				];
 				buildInputs = with pkgs; [
 					boost.dev
@@ -25,6 +25,18 @@
 
 				buildPhase = "just build";
 				installPhase = "cp out $out";
+			};
+
+			devShells.default = pkgs.mkShell {
+				packages = with pkgs; [
+					bear
+					gcc
+					just
+					boost.dev
+					bzip2
+					zlib
+					openssl
+				];
 			};
 		}
 	);

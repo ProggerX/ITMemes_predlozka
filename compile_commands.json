@@ -1,0 +1,13 @@
+[
+  {
+    "arguments": [
+      "/nix/store/sfgnb6rr428bssyrs54d6d0vv2avi95c-gcc-wrapper-12.3.0/bin/g++",
+      "-c",
+      "-I./include/",
+      "-oout",
+      "./src/main.cpp"
+    ],
+    "directory": "/home/proggerx/coding/ITMemes_predlozka",
+    "file": "/home/proggerx/coding/ITMemes_predlozka/src/main.cpp"
+  }
+]

@@ -10,6 +10,7 @@
 		in {
 			packages.default = pkgs.stdenv.mkDerivation {
 				name = "ITMemes-predloz";
+				src = ./.;
 
 				nativeBuildInputs = with pkgs; [
 					gcc

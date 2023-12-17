@@ -1,0 +1,11 @@
+prefix=/home/proggerx/.xmake/packages/t/tgbot-cpp/v1.7.2/39365f30797b4ba7b8625d1842113f18
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: tgbot-cpp
+Description: C++ library for Telegram bot API
+Version: v1.7.2
+Libs:  -L/home/proggerx/.xmake/packages/o/openssl/1.1.1-w/6c51ab6278e2479b883dffafac69fdaf/lib -L/home/proggerx/.xmake/packages/b/boost/1.83.0/5ea44ef424024b27a2ba82afd175ac15/lib -L/home/proggerx/.xmake/packages/b/bzip2/1.0.8/8db6bd46210f4711a452b7767b44748c/lib -L/home/proggerx/.xmake/packages/z/zlib/v1.3/45ea3fb9069b468faf0ef6782964c796/lib -L${libdir} -ltgbot-cpp -lssl -lcrypto -lboost_system-mt -lboost_atomic-mt -lboost_filesystem-mt -lbz2 -lz -lpthread -ldl
+Libs.private: 
+Cflags:  -I${includedir}
